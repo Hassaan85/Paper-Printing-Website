@@ -22,4 +22,11 @@ export class HeroComponent {
       transform: `translate(${this.mouseX * 20}px, ${this.mouseY * 20}px)`
     };
   }
+
+  scrollTo(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
