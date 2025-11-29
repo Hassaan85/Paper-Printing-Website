@@ -1,0 +1,19 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="container">
+    <div class="logo" (click)="scrollTo('hero')">
+      <h1>Farsiya<span>papertrading</span></h1>
+    </div>
+
+    <ul class="nav-links">
+      <li (click)="scrollTo('hero')">{{ 'NAV.HOME' | translate }}</li>
+      <li (click)="scrollTo('about')">{{ 'NAV.ABOUT' | translate }}</li>
+      <li (click)="scrollTo('works')">{{ 'NAV.WORKS' | translate }}</li>
+      <li (click)="scrollTo('contact')">{{ 'NAV.CONTACT' | translate }}</li>
+    </ul>
+
+    <button class="lang-btn" (click)="toggleLanguage()">
+      <span *ngIf="currentLang === 'en'">AR</span>
+      <span *ngIf="currentLang === 'ar'">EN</span>
+    </button>
+  </div>
+</nav>

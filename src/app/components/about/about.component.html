@@ -1,0 +1,31 @@
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-header" #animItem>
+            <h2>{{ 'ABOUT.TITLE' | translate }}</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="content" #animItem>
+            <p>{{ 'ABOUT.DESC' | translate }}</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card glass-card" #animItem style="transition-delay: 0.1s">
+                <div class="icon">🖨️</div>
+                <h3>{{ 'ABOUT.SERVICES.OFFSET' | translate }}</h3>
+            </div>
+            <div class="service-card glass-card" #animItem style="transition-delay: 0.2s">
+                <div class="icon">💻</div>
+                <h3>{{ 'ABOUT.SERVICES.DIGITAL' | translate }}</h3>
+            </div>
+            <div class="service-card glass-card" #animItem style="transition-delay: 0.3s">
+                <div class="icon">📦</div>
+                <h3>{{ 'ABOUT.SERVICES.PACKAGING' | translate }}</h3>
+            </div>
+            <div class="service-card glass-card" #animItem style="transition-delay: 0.4s">
+                <div class="icon">✨</div>
+                <h3>{{ 'ABOUT.SERVICES.CUSTOM' | translate }}</h3>
+            </div>
+        </div>
+    </div>
+</section>

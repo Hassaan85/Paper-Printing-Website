@@ -1,0 +1,126 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  /* Premium Color Palette */
+  --color-midnight-blue: #0a192f;
+  --color-royal-purple: #4a148c;
+  --color-emerald-green: #004d40;
+  --color-teal: #009688;
+  --color-gold: #ffd700;
+  --color-champagne: #f7e7ce;
+  --color-deep-navy: #020c1b;
+  --color-sapphire: #0f52ba;
+  --color-white: #ffffff;
+  --color-text-light: #e6f1ff;
+  --color-text-muted: #8892b0;
+
+  /* Gradients */
+  --gradient-main: linear-gradient(135deg, var(--color-midnight-blue) 0%, var(--color-royal-purple) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--color-emerald-green) 0%, var(--color-teal) 100%);
+  --gradient-gold: linear-gradient(135deg, var(--color-gold) 0%, var(--color-champagne) 100%);
+  --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+
+  /* Typography */
+  --font-primary: 'Outfit', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Transitions */
+  --transition-fast: 0.3s ease;
+  --transition-slow: 0.8s ease-in-out;
+}
+
+/* Reset & Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-midnight-blue);
+  color: var(--color-text-light);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-white);
+  margin-bottom: var(--spacing-sm);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-fast);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Glassmorphism Utility */
+.glass-card {
+  background: var(--gradient-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-fade-up {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  font-family: 'Outfit', sans-serif; /* Or a specific Arabic font if needed, e.g. Cairo */
+  text-align: right;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-midnight-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-teal);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-emerald-green);
+}
+

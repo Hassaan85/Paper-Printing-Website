@@ -1,0 +1,34 @@
+<section class="works" id="works">
+    <div class="container">
+        <div class="section-header">
+            <h2>{{ 'NAV.WORKS' | translate }}</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="slider-container" (touchstart)="onTouchStart($event)" (touchend)="onTouchEnd($event)">
+
+            <button class="nav-btn prev" (click)="prev(); stopAutoPlay(); startAutoPlay()">&#10094;</button>
+
+            <div class="slider-track">
+                <div class="slide glass-card" *ngFor="let work of works; let i = index"
+                    [class.active]="i === currentIndex"
+                    [class.prev]="i === (currentIndex - 1 + works.length) % works.length"
+                    [class.next]="i === (currentIndex + 1) % works.length">
+
+                    <div class="slide-image" [style.background]="work.image"></div>
+                    <div class="slide-content">
+                        <h3>{{ work.title }}</h3>
+                        <p>{{ work.category }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav-btn next" (click)="next(); stopAutoPlay(); startAutoPlay()">&#10095;</button>
+        </div>
+
+        <div class="dots">
+            <span *ngFor="let work of works; let i = index" [class.active]="i === currentIndex"
+                (click)="setIndex(i)"></span>
+        </div>
+    </div>
+</section>
