@@ -25,6 +25,12 @@ export class NavbarComponent {
     this.languageService.toggleLanguage();
   }
 
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
   scrollTo(id: string) {
     const element = document.getElementById(id);
     if (element) {

@@ -4,14 +4,26 @@
       <h1>Farsiya<span>papertrading</span></h1>
     </div>
 
-    <ul class="nav-links">
-      <li (click)="scrollTo('hero')">{{ 'NAV.HOME' | translate }}</li>
-      <li (click)="scrollTo('about')">{{ 'NAV.ABOUT' | translate }}</li>
-      <li (click)="scrollTo('works')">{{ 'NAV.WORKS' | translate }}</li>
-      <li (click)="scrollTo('contact')">{{ 'NAV.CONTACT' | translate }}</li>
+    <div class="hamburger" [class.active]="isMenuOpen" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" [class.active]="isMenuOpen">
+      <li (click)="scrollTo('hero'); toggleMenu()">{{ 'NAV.HOME' | translate }}</li>
+      <li (click)="scrollTo('about'); toggleMenu()">{{ 'NAV.ABOUT' | translate }}</li>
+      <li (click)="scrollTo('works'); toggleMenu()">{{ 'NAV.WORKS' | translate }}</li>
+      <li (click)="scrollTo('contact'); toggleMenu()">{{ 'NAV.CONTACT' | translate }}</li>
+      <li class="mobile-lang">
+        <button class="lang-btn" (click)="toggleLanguage()">
+          <span *ngIf="currentLang === 'en'">AR</span>
+          <span *ngIf="currentLang === 'ar'">EN</span>
+        </button>
+      </li>
     </ul>
 
-    <button class="lang-btn" (click)="toggleLanguage()">
+    <button class="lang-btn desktop-only" (click)="toggleLanguage()">
       <span *ngIf="currentLang === 'en'">AR</span>
       <span *ngIf="currentLang === 'ar'">EN</span>
     </button>
