@@ -1,18 +1,20 @@
 {
     "NAV": {
         "HOME": "Home",
-        "WORKS": "Our Works",
+        "WORKS": "Our Work",
         "ABOUT": "About Us",
-        "CONTACT": "Contact"
+        "CONTACT": "Contact",
+        "SERVICES": "Our Services",
+        "WORKFLOW": "WorkFlow"
     },
     "HERO": {
-        "TITLE": "Where Ideas Become Beautiful Prints",
-        "SUBTITLE": "Premium printing solutions for your business needs.",
-        "CTA": "View Our Work"
+        "TITLE": "Innovative Paper Pasting Solutions Since 2023",
+        "SUBTITLE": "Your Partner in Professional Paper Pasting.",
+        "CTA": "Get In Touch"
     },
     "ABOUT": {
         "TITLE": "About Us",
-        "DESC": "We are a premier printing company dedicated to delivering high-quality print solutions. From offset to digital, we bring your vision to life with precision and care.",
+        "DESC": "Established in 2023, Farseeya Paper Pasting LLC is located in Ajman, UAE. We specialize in a wide range of paper pasting techniques, offering top-notch solutions for bags, tags and other paper pasting products.",
         "SERVICES": {
             "OFFSET": "Offset Printing",
             "DIGITAL": "Digital Printing",
@@ -25,9 +27,11 @@
         "NAME": "Your Name",
         "EMAIL": "Email Address",
         "PHONE": "Phone Number",
+        "cEMAIL": "info@farsiyapaperpasting.ae",
+        "cPHONE": "+971 56743 3620",
         "MESSAGE": "Message",
         "SEND": "Send Message",
-        "ADDRESS": "123 Print Street, Creative City",
+        "ADDRESS": "Ajman, UAE",
         "WORKING_HOURS": "Mon - Fri: 9am - 6pm"
     }
 }
