@@ -11,9 +11,11 @@
     </div>
 
     <ul class="nav-links" [class.active]="isMenuOpen">
-      <li (click)="scrollTo('hero'); toggleMenu()">{{ 'NAV.HOME' | translate }}</li>
-      <li (click)="scrollTo('about'); toggleMenu()">{{ 'NAV.ABOUT' | translate }}</li>
+      <!-- <li (click)="scrollTo('hero'); toggleMenu()">{{ 'NAV.HOME' | translate }}</li> -->
+      <li (click)="scrollTo('services'); toggleMenu()">{{ 'NAV.SERVICES' | translate }}</li>
       <li (click)="scrollTo('works'); toggleMenu()">{{ 'NAV.WORKS' | translate }}</li>
+         <li (click)="scrollTo('process'); toggleMenu()">{{ 'NAV.WORKFLOW' | translate }}</li>
+      <li (click)="scrollTo('about'); toggleMenu()">{{ 'NAV.ABOUT' | translate }}</li>
       <li (click)="scrollTo('contact'); toggleMenu()">{{ 'NAV.CONTACT' | translate }}</li>
       <li class="mobile-lang">
         <button class="lang-btn" (click)="toggleLanguage()">

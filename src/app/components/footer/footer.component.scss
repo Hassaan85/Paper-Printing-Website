@@ -32,16 +32,23 @@ footer {
         }
     }
 
-    .socials {
-        display: flex;
-        gap: 1.5rem;
+    .contact-info {
+        text-align: right;
 
-        a {
-            color: var(--color-white);
+        p {
+            margin-bottom: 0.5rem;
             font-size: 0.9rem;
+            color: var(--color-text-muted);
 
-            &:hover {
+            i {
                 color: var(--color-teal);
+                margin-right: 0.5rem;
+                width: 20px;
+                text-align: center;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }
@@ -59,5 +66,9 @@ footer {
         flex-direction: column;
         text-align: center;
         gap: 1.5rem;
+    }
+
+    .contact-info {
+        text-align: center !important;
     }
 }

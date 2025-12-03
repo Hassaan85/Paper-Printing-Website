@@ -1,0 +1,32 @@
+<section class="process-section" id="process">
+    <div class="container">
+        <div class="section-header" #animItem>
+            <h2>WorkFlow</h2>
+            <div class="line"></div>
+            <p class="section-description">
+                Witness our dedication to quality and precision in every step of our paper pasting and manufacturing
+                process.
+            </p>
+        </div>
+
+        <div class="slider-container" #animItem style="transition-delay: 0.2s">
+            <div class="slider-wrapper" [style.transform]="'translateX(-' + currentSlide * 100 + '%)'">
+                <div class="slide" *ngFor="let image of images">
+                    <img [src]="image" alt="Process Image">
+                </div>
+            </div>
+
+            <button class="nav-btn prev" (click)="prevSlide()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="nav-btn next" (click)="nextSlide()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- <div class="indicators">
+                <span class="dot" *ngFor="let image of images; let i = index" [class.active]="i === currentSlide"
+                    (click)="goToSlide(i)"></span>
+            </div> -->
+        </div>
+    </div>
+</section>

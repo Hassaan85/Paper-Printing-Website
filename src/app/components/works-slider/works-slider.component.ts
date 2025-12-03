@@ -13,11 +13,11 @@ interface Work {
 })
 export class WorksSliderComponent implements OnInit, OnDestroy {
   works: Work[] = [
-    { title: 'Premium Brochure', category: 'Offset Printing', image: 'linear-gradient(45deg, #0a192f, #4a148c)' },
-    { title: 'Luxury Business Cards', category: 'Digital Printing', image: 'linear-gradient(45deg, #004d40, #009688)' },
-    { title: 'Product Packaging', category: 'Packaging', image: 'linear-gradient(45deg, #ffd700, #f7e7ce)' },
-    { title: 'Corporate Folder', category: 'Stationery', image: 'linear-gradient(45deg, #0f52ba, #020c1b)' },
-    { title: 'Event Invitation', category: 'Custom', image: 'linear-gradient(45deg, #4a148c, #ffd700)' }
+ //   { title: '', category: '', image: 'linear-gradient(45deg, #0a192f, #4a148c)' },
+    { title: '', category: '', image: 'url(assets/images/product-packaging-02.png)' },
+    { title: '', category: '', image: 'url(assets/images/product-packaging.png)' },
+    { title: '', category: '', image: 'url(assets/images/corporate-folder.png)' },
+ //   { title: '', category: '', image: 'url(assets/images/paper.png)' }
   ];
 
   currentIndex = 0;
