@@ -22,16 +22,19 @@ export class WorksSliderComponent implements OnInit, OnDestroy {
     { title: '', category: '', image: 'url(assets/images/image-5.png)' },
     { title: '', category: '', image: 'url(assets/images/image-6.png)' },
     { title: '', category: '', image: 'url(assets/images/image-7.png)' },
- //   { title: '', category: '', image: 'url(assets/images/image-8.png)' },
+    //   { title: '', category: '', image: 'url(assets/images/image-8.png)' },
     { title: '', category: '', image: 'url(assets/images/image-9.png)' },
     { title: '', category: '', image: 'url(assets/images/image-10.png)' },
     { title: '', category: '', image: 'url(assets/images/image-11.png)' },
-    { title: '', category: '', image: 'url(assets/images/image-12.png)' },
+    //   { title: '', category: '', image: 'url(assets/images/image-12.png)' },
     { title: '', category: '', image: 'url(assets/images/image-13.png)' },
     { title: '', category: '', image: 'url(assets/images/image-14.png)' },
     { title: '', category: '', image: 'url(assets/images/image-15.png)' },
     { title: '', category: '', image: 'url(assets/images/image-16.png)' },
     { title: '', category: '', image: 'url(assets/images/image-17.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-18.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-19.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-20.png)' },
     //   { title: '', category: '', image: 'url(assets/images/paper.png)' }
   ];
 
