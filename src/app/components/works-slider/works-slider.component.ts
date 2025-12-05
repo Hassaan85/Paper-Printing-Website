@@ -13,11 +13,26 @@ interface Work {
 })
 export class WorksSliderComponent implements OnInit, OnDestroy {
   works: Work[] = [
- //   { title: '', category: '', image: 'linear-gradient(45deg, #0a192f, #4a148c)' },
+    //   { title: '', category: '', image: 'linear-gradient(45deg, #0a192f, #4a148c)' },
     { title: '', category: '', image: 'url(assets/images/product-packaging-02.png)' },
     { title: '', category: '', image: 'url(assets/images/product-packaging.png)' },
     { title: '', category: '', image: 'url(assets/images/corporate-folder.png)' },
- //   { title: '', category: '', image: 'url(assets/images/paper.png)' }
+    { title: '', category: '', image: 'url(assets/images/image-3.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-4.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-5.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-6.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-7.png)' },
+ //   { title: '', category: '', image: 'url(assets/images/image-8.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-9.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-10.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-11.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-12.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-13.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-14.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-15.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-16.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-17.png)' },
+    //   { title: '', category: '', image: 'url(assets/images/paper.png)' }
   ];
 
   currentIndex = 0;
