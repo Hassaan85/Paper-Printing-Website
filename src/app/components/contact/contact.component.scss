@@ -58,9 +58,19 @@
             color: var(--color-teal);
         }
 
-        p {
+        p,
+        a {
             color: var(--color-text-light);
             font-size: 1.1rem;
+        }
+
+        a {
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: var(--color-teal);
+            }
         }
     }
 
