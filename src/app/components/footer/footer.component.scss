@@ -35,10 +35,14 @@ footer {
     .contact-info {
         text-align: right;
 
-        p {
+        p,
+        a {
             margin-bottom: 0.5rem;
             font-size: 0.9rem;
             color: var(--color-text-muted);
+            display: block;
+            text-decoration: none;
+            transition: color 0.3s ease;
 
             i {
                 color: var(--color-teal);
@@ -50,6 +54,10 @@ footer {
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+
+        a:hover {
+            color: var(--color-teal);
         }
     }
 }
