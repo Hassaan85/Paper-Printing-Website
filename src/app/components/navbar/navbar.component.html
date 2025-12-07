@@ -12,11 +12,16 @@
 
     <ul class="nav-links" [class.active]="isMenuOpen">
       <!-- <li (click)="scrollTo('hero'); toggleMenu()">{{ 'NAV.HOME' | translate }}</li> -->
-      <li (click)="scrollTo('services'); toggleMenu()">{{ 'NAV.SERVICES' | translate }}</li>
-      <li (click)="scrollTo('works'); toggleMenu()">{{ 'NAV.WORKS' | translate }}</li>
-         <li (click)="scrollTo('process'); toggleMenu()">{{ 'NAV.WORKFLOW' | translate }}</li>
-      <li (click)="scrollTo('about'); toggleMenu()">{{ 'NAV.ABOUT' | translate }}</li>
-      <li (click)="scrollTo('contact'); toggleMenu()">{{ 'NAV.CONTACT' | translate }}</li>
+      <li [class.active]="activeSection === 'services'" (click)="scrollTo('services'); toggleMenu()">{{ 'NAV.SERVICES' |
+        translate }}</li>
+      <li [class.active]="activeSection === 'works'" (click)="scrollTo('works'); toggleMenu()">{{ 'NAV.WORKS' |
+        translate }}</li>
+      <li [class.active]="activeSection === 'process'" (click)="scrollTo('process'); toggleMenu()">{{ 'NAV.WORKFLOW' |
+        translate }}</li>
+      <li [class.active]="activeSection === 'about'" (click)="scrollTo('about'); toggleMenu()">{{ 'NAV.ABOUT' |
+        translate }}</li>
+      <li [class.active]="activeSection === 'contact'" (click)="scrollTo('contact'); toggleMenu()">{{ 'NAV.CONTACT' |
+        translate }}</li>
       <li class="mobile-lang">
         <button class="lang-btn" (click)="toggleLanguage()">
           <span *ngIf="currentLang === 'en'">AR</span>

@@ -16,9 +16,28 @@ export class NavbarComponent {
     });
   }
 
+  activeSection: string = 'hero';
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled = window.scrollY > 50;
+    this.checkActiveSection();
+  }
+
+  checkActiveSection() {
+    const sections = ['hero', 'services', 'works', 'process', 'about', 'contact'];
+
+    for (const section of sections) {
+      const element = document.getElementById(section);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        // Check if section is in viewport (with some offset for navbar height)
+        if (rect.top <= 150 && rect.bottom >= 150) {
+          this.activeSection = section;
+          break;
+        }
+      }
+    }
   }
 
   toggleLanguage() {
