@@ -17,7 +17,7 @@ export class WorksSliderComponent implements OnInit, OnDestroy {
     { title: '', category: '', image: 'url(assets/images/product-packaging-02.png)' },
     { title: '', category: '', image: 'url(assets/images/product-packaging.png)' },
     { title: '', category: '', image: 'url(assets/images/corporate-folder.png)' },
-    { title: '', category: '', image: 'url(assets/images/image-3.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-24.png)' },
     { title: '', category: '', image: 'url(assets/images/image-4.png)' },
     { title: '', category: '', image: 'url(assets/images/image-5.png)' },
     { title: '', category: '', image: 'url(assets/images/image-6.png)' },
@@ -35,6 +35,8 @@ export class WorksSliderComponent implements OnInit, OnDestroy {
     { title: '', category: '', image: 'url(assets/images/image-18.png)' },
     { title: '', category: '', image: 'url(assets/images/image-19.png)' },
     { title: '', category: '', image: 'url(assets/images/image-20.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-22.png)' },
+    { title: '', category: '', image: 'url(assets/images/image-23.png)' },
     //   { title: '', category: '', image: 'url(assets/images/paper.png)' }
   ];
 
