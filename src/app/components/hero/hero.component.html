@@ -1,10 +1,15 @@
 <section class="hero" id="hero">
-    <div class="animated-bg"></div>
-    <div class="particles">
+    <video class="hero-video" autoplay [muted]="true" loop playsinline oncanplay="this.play()"
+        onloadedmetadata="this.muted = true">
+        <source src="/assets/videos/Hero.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
+    <!-- <div class="particles">
         <div class="particle p1"></div>
         <div class="particle p2"></div>
         <div class="particle p3"></div>
-    </div>
+    </div> -->
 
     <div class="container" [ngStyle]="parallaxStyle" #heroContent>
         <div class="content">

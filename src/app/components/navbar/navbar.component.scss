@@ -28,15 +28,10 @@
     .logo {
         cursor: pointer;
 
-        h1 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin: 0;
-            letter-spacing: 1px;
-
-            span {
-                color: var(--color-teal);
-            }
+        img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
         }
     }
 

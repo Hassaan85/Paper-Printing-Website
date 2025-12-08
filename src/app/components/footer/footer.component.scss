@@ -18,13 +18,11 @@ footer {
     margin-bottom: var(--spacing-md);
 
     .brand {
-        h2 {
-            font-size: 1.5rem;
+        .footer-logo {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
             margin-bottom: 0.5rem;
-
-            span {
-                color: var(--color-teal);
-            }
         }
 
         p {
