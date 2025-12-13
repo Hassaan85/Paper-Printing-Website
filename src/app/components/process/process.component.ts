@@ -28,7 +28,6 @@ export class ProcessComponent implements OnInit, OnDestroy, AfterViewInit {
     'assets/images/process/process-17.jpg',
     'assets/images/process/process-18.jpg',
     'assets/images/process/process-19.jpg',
-    'assets/images/process/process-20.jpg',
     'assets/images/process/process-21.jpg'
   ];
 
