@@ -1,15 +1,14 @@
 <section class="process-section" id="process">
     <div class="container">
         <div class="section-header" #animItem>
-            <h2>WorkFlow</h2>
+            <h2>{{ 'PROCESS.TITLE' | translate }}</h2>
             <div class="line"></div>
             <p class="section-description">
-                Witness our dedication to quality and precision in every step of our paper pasting and manufacturing
-                process.
+                {{ 'PROCESS.DESC' | translate }}
             </p>
         </div>
 
-        <div class="slider-container" #animItem style="transition-delay: 0.2s">
+        <div class="slider-container" #animItem style="transition-delay: 0.2s" dir="ltr">
             <div class="slider-wrapper" [style.transform]="'translateX(-' + currentSlide * 100 + '%)'">
                 <div class="slide" *ngFor="let image of images">
                     <img [src]="image" alt="Process Image">

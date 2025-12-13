@@ -33,5 +33,58 @@
         "SEND": "Send Message",
         "ADDRESS": "Ajman, UAE",
         "WORKING_HOURS": "Mon - Fri: 9am - 6pm"
+    },
+    "SERVICES_PAGE": {
+        "TITLE": "Our Services",
+        "DESC": "At Farsiya Paper Trading LLC, we offer a comprehensive range of professional paper pasting services designed to meet diverse industrial, commercial and custom requirements. Our expertise spans multiple techniques and applications, ensuring strength, smooth finishes, and perfect bonding every time.",
+        "ITEMS": {
+            "SERVICE_1": {
+                "TITLE": "Advanced Paper Pasting Techniques",
+                "DESC": "We utilize various expert pasting methods to achieve outstanding strength, precision, and durability, suitable for packaging, crafts, and commercial manufacturing. Our team uses high-quality adhesives and machinery to ensure seamless, bubble-free, and long-lasting results."
+            },
+            "SERVICE_2": {
+                "TITLE": "Custom Paper Bag Manufacturing",
+                "DESC": "We paste premium paper bags in different sizes, thicknesses, and designs for retail shops, events, restaurants, gifting, and product packaging. Options include laminated, kraft, rope-handle, flat-handle, tags and customized printed bags."
+            },
+            "SERVICE_3": {
+                "TITLE": "Multi-Layer Paper Sheet Pasting",
+                "DESC": "Ideal for strengthening materials for box making, packaging, and reinforcement purposes. We provide single-layer to multi-layer pasting depending on the strength and thickness required."
+            },
+            "SERVICE_4": {
+                "TITLE": "Specialized Packaging Solutions",
+                "DESC": "We offer tailor-made paper-based packaging options designed to support branding, product protection, sustainability goals, and commercial presentation."
+            },
+            "SERVICE_5": {
+                "TITLE": "Custom Cutting & Finishing",
+                "DESC": "Precise trimming, folding, and finishing services ensure professional-grade results for all types of paper products, enhancing both quality and presentation."
+            },
+            "SERVICE_6": {
+                "TITLE": "Bulk & Commercial Orders",
+                "DESC": "We handle high-volume production for businesses while maintaining efficiency, quality, and timely delivery."
+            }
+        },
+        "WHY_CHOOSE_US": {
+            "TITLE": "Why Choose Us",
+            "REASONS": {
+                "REASON_1": {
+                    "TITLE": "Quality Assurance",
+                    "DESC": "Committed to excellence, we guarantee high-quality products that meet international standards."
+                },
+                "REASON_2": {
+                    "TITLE": "Customer Focus",
+                    "DESC": "Our client-centric approach ensures personalized service and timely delivery."
+                }
+            }
+        }
+    },
+    "PROCESS": {
+        "TITLE": "WorkFlow",
+        "DESC": "Witness our dedication to quality and precision in every step of our paper pasting and manufacturing process."
+    },
+    "FOOTER": {
+        "TAGLINE": "Your Partner in Professional Paper Pasting.",
+        "LICENSE": "License No: 1470313",
+        "COPYRIGHT": "All rights reserved.",
+        "DESIGNED_BY": "Designed by TrendWave"
     }
 }

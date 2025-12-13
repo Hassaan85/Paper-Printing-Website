@@ -10,46 +10,46 @@ export class ServicesComponent implements AfterViewInit {
 
   services = [
     {
-      title: 'Advanced Paper Pasting Techniques',
-      description: 'We utilize various expert pasting methods to achieve outstanding strength, precision, and durability, suitable for packaging, crafts, and commercial manufacturing. Our team uses high-quality adhesives and machinery to ensure seamless, bubble-free, and long-lasting results.',
+      title: 'SERVICES_PAGE.ITEMS.SERVICE_1.TITLE',
+      description: 'SERVICES_PAGE.ITEMS.SERVICE_1.DESC',
       icon: 'fas fa-layer-group'
     },
     {
-      title: 'Custom Paper Bag Manufacturing',
-      description: 'We paste premium paper bags in different sizes, thicknesses, and designs for retail shops, events, restaurants, gifting, and product packaging. Options include laminated, kraft, rope-handle, flat-handle, tags and customized printed bags.',
+      title: 'SERVICES_PAGE.ITEMS.SERVICE_2.TITLE',
+      description: 'SERVICES_PAGE.ITEMS.SERVICE_2.DESC',
       icon: 'fas fa-shopping-bag'
     },
     {
-      title: 'Multi-Layer Paper Sheet Pasting',
-      description: 'Ideal for strengthening materials for box making, packaging, and reinforcement purposes. We provide single-layer to multi-layer pasting depending on the strength and thickness required.',
+      title: 'SERVICES_PAGE.ITEMS.SERVICE_3.TITLE',
+      description: 'SERVICES_PAGE.ITEMS.SERVICE_3.DESC',
       icon: 'fas fa-copy'
     },
     {
-      title: 'Specialized Packaging Solutions',
-      description: 'We offer tailor-made paper-based packaging options designed to support branding, product protection, sustainability goals, and commercial presentation.',
+      title: 'SERVICES_PAGE.ITEMS.SERVICE_4.TITLE',
+      description: 'SERVICES_PAGE.ITEMS.SERVICE_4.DESC',
       icon: 'fas fa-box-open'
     },
     {
-      title: 'Custom Cutting & Finishing',
-      description: 'Precise trimming, folding, and finishing services ensure professional-grade results for all types of paper products, enhancing both quality and presentation.',
+      title: 'SERVICES_PAGE.ITEMS.SERVICE_5.TITLE',
+      description: 'SERVICES_PAGE.ITEMS.SERVICE_5.DESC',
       icon: 'fas fa-cut'
     },
     {
-      title: 'Bulk & Commercial Orders',
-      description: 'We handle high-volume production for businesses while maintaining efficiency, quality, and timely delivery.',
+      title: 'SERVICES_PAGE.ITEMS.SERVICE_6.TITLE',
+      description: 'SERVICES_PAGE.ITEMS.SERVICE_6.DESC',
       icon: 'fas fa-truck-loading'
     }
   ];
 
   whyChooseUs = [
     {
-      title: 'Quality Assurance',
-      description: 'Committed to excellence, we guarantee high-quality products that meet international standards.',
+      title: 'SERVICES_PAGE.WHY_CHOOSE_US.REASONS.REASON_1.TITLE',
+      description: 'SERVICES_PAGE.WHY_CHOOSE_US.REASONS.REASON_1.DESC',
       icon: 'fas fa-check-circle'
     },
     {
-      title: 'Customer Focus',
-      description: 'Our client-centric approach ensures personalized service and timely delivery.',
+      title: 'SERVICES_PAGE.WHY_CHOOSE_US.REASONS.REASON_2.TITLE',
+      description: 'SERVICES_PAGE.WHY_CHOOSE_US.REASONS.REASON_2.DESC',
       icon: 'fas fa-users'
     }
   ];

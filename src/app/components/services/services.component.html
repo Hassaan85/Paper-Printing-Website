@@ -1,12 +1,10 @@
 <section class="services-section" id="services">
     <div class="container">
         <div class="section-header" #animItem>
-            <h2>Our Services</h2>
+            <h2>{{ 'SERVICES_PAGE.TITLE' | translate }}</h2>
             <div class="line"></div>
             <p class="section-description">
-                At Farsiya Paper Trading LLC, we offer a comprehensive range of professional paper pasting services
-                designed to meet diverse industrial, commercial and custom requirements. Our expertise spans multiple
-                techniques and applications, ensuring strength, smooth finishes, and perfect bonding every time.
+                {{ 'SERVICES_PAGE.DESC' | translate }}
             </p>
         </div>
 
@@ -16,21 +14,21 @@
                 <div class="icon-wrapper">
                     <i [class]="service.icon"></i>
                 </div>
-                <h3 class="service-title">{{ service.title }}</h3>
-                <p class="service-description">{{ service.description }}</p>
+                <h3 class="service-title">{{ service.title | translate }}</h3>
+                <p class="service-description">{{ service.description | translate }}</p>
             </div>
         </div>
 
         <div class="why-choose-us" #animItem style="transition-delay: 0.4s">
-            <h3 class="subsection-title">Why Choose Us</h3>
+            <h3 class="subsection-title">{{ 'SERVICES_PAGE.WHY_CHOOSE_US.TITLE' | translate }}</h3>
             <div class="reasons-grid">
                 <div class="reason-card" *ngFor="let reason of whyChooseUs">
                     <div class="icon-wrapper">
                         <i [class]="reason.icon"></i>
                     </div>
                     <div class="reason-content">
-                        <h4 class="reason-title">{{ reason.title }}</h4>
-                        <p class="reason-description">{{ reason.description }}</p>
+                        <h4 class="reason-title">{{ reason.title | translate }}</h4>
+                        <p class="reason-description">{{ reason.description | translate }}</p>
                     </div>
                 </div>
             </div>

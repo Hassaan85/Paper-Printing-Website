@@ -43,11 +43,15 @@ export class ProcessComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   nextSlide() {
+    this.stopAutoPlay();
     this.currentSlide = (this.currentSlide + 1) % this.images.length;
+    this.startAutoPlay();
   }
 
   prevSlide() {
+    this.stopAutoPlay();
     this.currentSlide = (this.currentSlide - 1 + this.images.length) % this.images.length;
+    this.startAutoPlay();
   }
 
   goToSlide(index: number) {
