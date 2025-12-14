@@ -1,0 +1,15 @@
+<div class="toast-container" *ngIf="message" [ngClass]="message.type" [@toastAnimation]>
+    <div class="toast-icon">
+        <i class="fas" [ngClass]="{
+            'fa-check-circle': message.type === 'success',
+            'fa-exclamation-circle': message.type === 'error',
+            'fa-info-circle': message.type === 'info'
+        }"></i>
+    </div>
+    <div class="toast-message">
+        {{ message.message }}
+    </div>
+    <button class="toast-close" (click)="closeToast()">
+        <i class="fas fa-times"></i>
+    </button>
+</div>

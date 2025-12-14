@@ -15,6 +15,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ProcessComponent } from './components/process/process.component';
+import { ToastComponent } from './components/toast/toast.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -30,10 +32,12 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactComponent,
     FooterComponent,
     ServicesComponent,
-    ProcessComponent
+    ProcessComponent,
+    ToastComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,

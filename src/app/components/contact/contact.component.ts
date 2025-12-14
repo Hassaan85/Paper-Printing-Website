@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { EmailService } from '../../services/email.service';
+import { ToastService } from '../../services/toast.service';
 
 @Component({
   selector: 'app-contact',
@@ -14,7 +15,10 @@ export class ContactComponent {
 
   isLoading: boolean = false;
 
-  constructor(private emailService: EmailService) { }
+  constructor(
+    private emailService: EmailService,
+    private toastService: ToastService
+  ) { }
 
   async onSubmit(event: Event) {
     event.preventDefault();
@@ -33,10 +37,10 @@ export class ContactComponent {
 
     try {
       await this.emailService.sendEmail(templateParams);
-      alert('Message sent successfully!');
+      this.toastService.show('Message sent successfully!', 'success');
       this.resetForm();
     } catch (error) {
-      alert('Failed to send message. Please try again later.');
+      this.toastService.show('Failed to send message. Please try again later.', 'error');
     } finally {
       this.isLoading = false;
     }
